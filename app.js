@@ -38,28 +38,61 @@ app.use(function (req, res, next) {
 
 // error handler
 app.use(function (err, req, res, next) {
-  
-  if (err.name == "SequelizeDatabaseError") {
-    console.log("Invalid Column Name")
-    res.status(HTTP_CODES.NOT_FOUND)
-      .send(err);
-  }
-  else if (err.name == "SequelizeAccessDeniedError") {
-    console.log("Invalid Password")
-    res.status(HTTP_CODES.INTERNAL_SERVER_ERROR)
-      .send(err);
-  }
-  else if (err.Status == 404) {
-    var errorMessage = {
-      "Status": parseInt(err.Status),
-      "Info": err.Info
+  //Joi Validation - Error Handling
+  if (err.isBoom) {
+    var error = {
+      "statusCode": 400,
+      "info": "Check Request Payload",
+      "error": err.data[0].message.replace(/\"/g, '')
     };
-    res.status(404).json(errorMessage);
+    res.status(400).send(error);
+
   }
+  //Error Handling other than Joi Validations
   else {
-    res.status(HTTP_CODES.NOT_FOUND)
-      .send(err);
+    //Invalid Database column Error / Field not Defined Error 
+    if (err.name == "SequelizeDatabaseError") {
+      console.log("Invalid Column Name");
+      var errorMessage = {
+        "statusCode": 404,
+        "info": "Invalid Column Name / Check DB Columns",
+        "error": err
+      };
+      res.status(404).send(errorMessage);
+    }
+    //DB Credentials Error
+    else if (err.name == "SequelizeAccessDeniedError") {
+      console.log("Invalid Password")
+      var errorMessage = {
+        "status": 500,
+        "info": "DB Credentials Error",
+        "error": err
+      };
+      res.status(500).send(errorMessage);
+    }
+    //404 Error
+    else if (err.statusCode == 404) {
+      var errorMessage = {
+        "statusCode": parseInt(err.statusCode),
+        "error": err
+      };
+      res.status(404).json(errorMessage);
+    }
+    //400 Error
+    else if (err.statusCode == 400) {
+      var errorMessage = {
+        "statusCode": parseInt(err.statusCode),
+        "info": "Bad Request",
+        "error": err
+      };
+      res.status(400).json(errorMessage);
+    }
+    //500 Error
+    else {
+      res.status(500).send(err);
+    }
   }
+
 });
 
 module.exports = app;
