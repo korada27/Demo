@@ -3,26 +3,25 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/users.route');
 var employeeRouter = require('./routes/employee.route');
+var verifyToken = require('./middlewares/verifyToken');
 var dbconnectioninfo = require('./connection/dbConnection');
 var HTTP_CODES = require('./util/statusCodes');
 var app = express();
-
+var logger = require('./util/logger');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use('/employee',verifyToken, employeeRouter);
 app.use('/users', usersRouter);
-app.use('/employee', employeeRouter);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
@@ -52,7 +51,7 @@ app.use(function (err, req, res, next) {
   else {
     //Invalid Database column Error / Field not Defined Error 
     if (err.name == "SequelizeDatabaseError") {
-      console.log("Invalid Column Name");
+      // console.log("Invalid Column Name");
       var errorMessage = {
         "statusCode": 404,
         "info": "Invalid Column Name / Check DB Columns",
@@ -83,7 +82,7 @@ app.use(function (err, req, res, next) {
       var errorMessage = {
         "statusCode": parseInt(err.statusCode),
         "info": "Bad Request",
-        "error": err
+        "error": err.error
       };
       res.status(400).json(errorMessage);
     }
