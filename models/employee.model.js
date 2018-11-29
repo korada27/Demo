@@ -12,12 +12,13 @@ let Employee = mariaConnection.define('employee', {
     Email: sequelize.STRING,
     Phone: sequelize.STRING,
     Designation: sequelize.STRING,
-    Project: sequelize.STRING,
-    Module: sequelize.STRING,
+    // Project: sequelize.STRING,
+    // Module: sequelize.STRING,
     City: sequelize.STRING,
     State: sequelize.STRING,
     Country: sequelize.STRING,
-    PostalCode: sequelize.BIGINT
+    PostalCode: sequelize.BIGINT,
+    IsDeleted : sequelize.INTEGER
 }, {
         timestamps: false,
         freezeTableName: true, // Model tableName will be the same as the model name
