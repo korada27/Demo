@@ -8,7 +8,11 @@ const employeeModel = require('../models/employee.model');
 var getAllEmployees = async (req, res, next) => {
 
     try {
-        let empData = await employeeModel.Employee.findAll();
+        let empData = await employeeModel.Employee.findAll({
+            where:{
+                IsDeleted:0
+            }
+        });
         res.status(HTTP_CODES.OK).send({
             "statusCode": HTTP_CODES.OK,
             "info": "List of Employees",
@@ -16,11 +20,7 @@ var getAllEmployees = async (req, res, next) => {
         })
     }
     catch (e) {
-        res.status(HTTP_CODES.INTERNAL_SERVER_ERROR).send({
-            "statusCode": HTTP_CODES.INTERNAL_SERVER_ERROR,
-            "info": "List of Employees",
-            "error": e
-        })
+        next(e);//Send Database Error to app.js to Error Handler Middleware
     }
 }
 
@@ -39,11 +39,7 @@ var addEmployee = async (req, res, next) => {
         }
     }
     catch (e) {
-        res.status(HTTP_CODES.INTERNAL_SERVER_ERROR).send({
-            "statusCode": HTTP_CODES.INTERNAL_SERVER_ERROR,
-            "info": "List of Employees",
-            "error": e
-        })
+      next(e);
     }
 }
 
