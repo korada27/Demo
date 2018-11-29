@@ -1,6 +1,6 @@
 // const Promise = require('promise');
 // const mariaConnection = require('../connection/dbConnection');
-var HTTP_CODES = require('../config/statusCodes');
+var HTTP_CODES = require('../util/statusCodes');
 const employeeModel = require('../models/employee.model');
 
 

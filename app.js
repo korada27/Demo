@@ -7,7 +7,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var employeeRouter = require('./routes/employee.route');
 var dbconnectioninfo = require('./connection/dbConnection');
-var HTTP_CODES = require('./config/statusCodes');
+var HTTP_CODES = require('./util/statusCodes');
 var app = express();
 
 // view engine setup
