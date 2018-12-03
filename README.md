@@ -6,7 +6,7 @@ Node.JS Basic Application which covers the concepts :
     - npm install -g express
     - npm install -g express-generator
 
-2. Separating/Segregate the Folder Structure to maintain MVC pattern like :
+<b>2. Separating/Segregate the Folder Structure to maintain MVC pattern like :</b>
 - All endpoints to maintained in /routes/
 - All Database Coonectivity to maintained in /connection/
 - All Application Business Logic to maintained in /services/
@@ -18,15 +18,15 @@ Node.JS Basic Application which covers the concepts :
 - All Front End pages to maintained in /public/
 - All user level middleware to maintained in /middlewares/ .........etc
 
-3. Usage of Sequelize ORM 
+<b>3. Usage of Sequelize ORM </b>
 - Follow this link - http://docs.sequelizejs.com
 
-4. Usage of Async Await
+<b>4. Usage of Async Await</b>
 
-5. Basic CRUD Operations - Employee Functionality 
+<b>5. Basic CRUD Operations - Employee Functionality </b>
 - CREATE,READALL,READ,UPDATE,DELETE(Soft Delete)
 
-6. JOI Validations :
+<b>6. JOI Validations :</b>
 - npm pacakges used are : 
     - joi 
     - express-joi-validator
