@@ -39,3 +39,21 @@ Node.JS Basic Application which covers the concepts :
 var a =>(){
 }
 </code>
+
+<b>9. Hashing plain Text passwords</b>
+- Hashing done using bcryptjs npm package.
+- hashing done using Salt rounds
+
+<b>10. JWT </b>
+- JSON Web Tokens 
+- "jsonwebtoken" npm package
+- Verification of JSON Web Tokens in separate middleware
+
+<b>11. Loggers : </b>
+- Logs at Console,File with different levels (info,debug,error...etc)
+- "winston" npm package
+
+<b>12. Basic CRUD Operations - User Management</b>
+- API to register user data in which the password should be hashed(encrypted) and store in database
+- API to login in which on successfull login it gives a JWT token of certain expiration time
+- Securing previous Employee CRUD operation (all API's) using this JWT middleware in app.js base path.
