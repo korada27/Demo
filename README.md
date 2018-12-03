@@ -30,3 +30,13 @@ Node.JS Basic Application which covers the concepts :
 - npm pacakges used are : 
     - joi 
     - express-joi-validator
+<b>7. Error/Exception Handling:  </b>
+- using try/catch 
+- using status codes and Error handler middleware
+
+<b>8. Usage of Array functions</b>
+- Example :  <code>
+var a =>(){
+    
+}
+</code>
