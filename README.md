@@ -37,6 +37,5 @@ Node.JS Basic Application which covers the concepts :
 <b>8. Usage of Array functions</b>
 - Example :  <code>
 var a =>(){
-    
 }
 </code>
