@@ -31,7 +31,7 @@ Node.JS Basic Application which covers the concepts :
     - joi 
     - express-joi-validator
 
-<b>7. Error/Exception Handling:  </b>
+<b>7. Error/Exception Handling:</b>
 - using try/catch 
 - using status codes and Error handler middleware
 
