@@ -1,5 +1,3 @@
-// const Promise = require('promise');
-// const mariaConnection = require('../connection/dbConnection');
 var HTTP_CODES = require('../util/statusCodes');
 const employeeModel = require('../models/employee.model');
 
@@ -20,7 +18,7 @@ var getAllEmployees = async (req, res, next) => {
         })
     }
     catch (e) {
-        next(e);//Send Database Error to app.js to Error Handler Middleware
+        // next(e);//Send Database Error to app.js to Error Handler Middleware
     }
 }
 
