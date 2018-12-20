@@ -13,7 +13,8 @@ var connection = new sequelize(config.mariaDB.db, config.mariaDB.username, confi
     max: 30,
     min: 0,
     idle: 10000
-  }
+  },
+  operatorsAliases: false
 });
  
 connection.authenticate()
