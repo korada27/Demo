@@ -20,7 +20,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/employee',verifyToken, employeeRouter);
+//Swagger Integration
+// var swaggerUi = require('swagger-ui-express'),
+//     YAML = require('yamljs'),
+//     swaggerDocument = YAML.load(path.join(__dirname + '/swagger.yaml'));
+// var options = {
+//     swaggerOptions: {
+//         docExpansion: 'none'
+//     }
+// };
+// app.use('/apiSpec', swaggerUi.serve);
+// app.get('/apiSpec', swaggerUi.setup(swaggerDocument, options));
+
+app.use('/employee', employeeRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
