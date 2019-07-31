@@ -22,10 +22,10 @@
     "morgan": "~1.9.0",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2",
+    "sequelize": "^5.8.11",
     "sequelize-mock": "^0.10.2",
     "winston": "^3.1.0",
-    "snyk": "^1.161.1"
+    "snyk": "^1.207.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
