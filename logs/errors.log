@@ -1,0 +1,98 @@
+ [LOG]  2018-11-29 17:44:58  error : Error Connecting to DatabaseSequelizeConnectionError: Unknown database 'test1'
+ [LOG]  2018-11-29 17:47:10  error : Error Connecting to DatabaseSequelizeConnectionError: Unknown database 'test1'
+ [LOG]  2018-11-29 19:28:30  [31m[31merror[31m[39m: uncaughtException: Can't set headers after they are sent.
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\miracle\Desktop\Demo\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Users\miracle\Desktop\Demo\node_modules\express\lib\response.js:170:12)
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:38:31
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 19:30:53  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'create' of undefined
+TypeError: Cannot read property 'create' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:40:55
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:23:17  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:80:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:23:22  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:80:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:23:35  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:80:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:24:25  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:80:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:24:58  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:81:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:25:20  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:80:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 20:25:43  [31m[31merror[31m[39m: uncaughtException: Cannot read property 'Email' of undefined
+TypeError: Cannot read property 'Email' of undefined
+    at C:\Users\miracle\Desktop\Demo\services\user.service.js:81:70
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:297:21
+    at C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1353:21
+    at Immediate.next [as _onImmediate] (C:\Users\miracle\Desktop\Demo\node_modules\bcryptjs\dist\bcrypt.js:1233:21)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+ [LOG]  2018-11-29 21:02:40  [31m[31merror[31m[39m: No Access Token Provided
+ [LOG]  2018-11-29 21:04:18  [31m[31merror[31m[39m: No Access Token Provided
+ [LOG]  2018-11-29 21:04:18  [31m[31merror[31m[39m: Failed to Authenticate token.
+ [LOG]  2018-11-29 21:04:48  [31m[31merror[31m[39m: No Access Token Provided
+ [LOG]  2018-11-29 21:05:36  [31m[31merror[31m[39m: No Access Token Provided
+ [LOG]  2018-11-29 21:06:07  [31m[31merror[31m[39m: No Access Token Provided
+ [LOG]  2018-11-29 21:07:21  [31m[31merror[31m[39m: Failed to Authenticate token.
+ [LOG]  2018-11-29 21:07:52  [31m[31merror[31m[39m: Failed to Authenticate token.
+ [LOG]  2018-11-29 21:08:18  [31m[31merror[31m[39m: Failed to Authenticate token.
+ [LOG]  2018-11-29 21:08:44  [31m[31merror[31m[39m: Failed to Authenticate token.
+ [LOG]  2018-11-29 21:08:54  [31m[31merror[31m[39m: Failed to Authenticate token.
+ [LOG]  2018-11-29 21:09:22  [31m[31merror[31m[39m: No Access Token Provided
+ [LOG]  2018-11-29 22:37:10  [31m[31merror[31m[39m: Failed to Authenticate token.

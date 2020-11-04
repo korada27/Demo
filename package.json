@@ -1,0 +1,38 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha",
+    "coverage": "istanbul cover ./test/employee.spec.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-joi-validator": "^2.0.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.4.0",
+    "mock-require": "^3.0.2",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2",
+    "sequelize-mock": "^0.10.2",
+    "winston": "^3.1.0",
+    "snyk": "^1.161.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "jshint": "^2.9.5",
+    "mocha": "^5.2.0"
+  },
+  "snyk": true
+}
